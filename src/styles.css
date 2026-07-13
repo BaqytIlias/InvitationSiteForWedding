@@ -307,7 +307,7 @@ a {
   position: relative;
   min-height: 100svh;
   padding: 28px 0 0;
-  background: linear-gradient(180deg, var(--paper-soft) 0%, var(--paper) 50%, #f7f1ea 100%);
+  background: var(--paper-soft, #fffaf5);
 }
 
 .open-stationery {
@@ -495,7 +495,7 @@ a {
   justify-items: center;
   margin: -18px auto 0;
   padding: 0 28px 64px;
-  overflow: hidden;
+  overflow: visible; /* Changed to visible to prevent clipping the decoration branches */
   text-align: center;
 }
 
@@ -767,7 +767,7 @@ a {
   width: min(100%, 464px);
   margin: 0 auto;
   padding: 32px 22px 38px;
-  background: #ffffff;
+  background: transparent;
   color: #968f79;
   text-align: center;
 }
@@ -904,7 +904,23 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  padding: 46px 30px 58px;
+  background: transparent;
+  overflow: visible;
   text-align: center;
+
+}
+.hosts-flower-branch {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  user-select: none;
+  pointer-events: none;
+  bottom: -20%;
+  left: 0;
 }
 
 .hosts-corner {
@@ -932,7 +948,7 @@ a {
 }
 
 .hosts-script {
-  color: #ffffff;
+  color: #968f79;
   font-family: "Bickham Script Pro 3";
   font-size: 50px;
   font-weight: 200;
@@ -941,7 +957,7 @@ a {
 }
 
 .hosts-namess {
-  color: #ffffff;
+  color: #968f79;
   font-size: 55px;
   font-weight: 500;
   letter-spacing: 0.04em;
