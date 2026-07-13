@@ -49,3 +49,4 @@ function updateCountdown() {
 // Run immediately and update every second
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
