@@ -261,6 +261,7 @@ a {
 
 .closed-envelope-copy strong {
   display: block;
+  margin-left: 7%;
   font-family: var(--script-display);
   font-size: clamp(36px, 9.5vw, 62px);
   font-weight: 400;
@@ -431,7 +432,7 @@ a {
 
 .save-under-photo {
   position: absolute;
-  top: 37%;
+  top: 42%;
   left: 33%;
   z-index: 6;
   width: 40%;
@@ -445,7 +446,7 @@ a {
 
 .asset-heart-card {
   position: absolute;
-  top: 25%;
+  top: 27%;
   left: 50%;
   z-index: 7;
   width: 47%;
@@ -470,6 +471,7 @@ a {
   line-height: 1;
   white-space: nowrap;
   transform: translate(-50%, -50%);
+  font-family: "Cormorant Garamond";
 }
 
 .floral-layer {
@@ -1375,7 +1377,7 @@ a {
   .paper-copy .script-name {
     width: 146%;
     margin: 42px 0 32px;
-    font-size: clamp(6.1rem, 25.5vw, 6.8rem);
+    font-size: 5rem;
   }
 }
 
@@ -2195,9 +2197,9 @@ body:not(.fonts-ready) .intro-name {
 
 .paper-copy .script-name {
   width: 142%;
-  margin: 46px 0 38px;
-  font-size: 6.55rem;
-  line-height: 0.78;
+  margin: 26px 0 28px;
+  font-size: 5.55rem;
+  line-height: 0.58;
   color: rgb(142, 151, 122);
   text-transform: none;
   /* text-shadow: 0 12px 20px rgba(143, 155, 91, 0.14); */
@@ -2459,7 +2461,6 @@ body:not(.fonts-ready) .intro-name {
   position: relative;
   overflow: hidden;
   align-content: center;
-  margin-top: 10px;
   /* padding-top: 58px;
   padding-bottom: 30px; */
   /* background:
@@ -2943,7 +2944,7 @@ body:not(.fonts-ready) .intro-name {
 .final-rose {
   position: absolute;
   left: 40%;
-  top: 30%; /* Vertically centers the monogram on the brush strokes background */
+  top: 40%; /* Vertically centers the monogram on the brush strokes background */
   transform: translate(-50%, -50%);
   z-index: 2;
   width: min(32%, 140px); /* Larger size so it is highly visible */
@@ -2990,7 +2991,7 @@ body:not(.fonts-ready) .intro-name {
   margin: -20px 0 46px 0;
   color: rgb(142, 151, 122);
   font-family: "Bickham Script Pro 3", "Great Vibes", var(--serif-display);
-  font-size: clamp(3.9rem, 15.2vw, 6rem);
+  font-size: clamp(6rem, 19vw, 7.5rem);
   font-style: normal;
   line-height: 0.82;
   font-weight: 400;
@@ -3314,8 +3315,8 @@ body:not(.fonts-ready) .intro-name {
 
   .paper-copy .script-name {
     width: 146%;
-    margin: 42px 0 32px;
-    font-size: clamp(6.1rem, 25.5vw, 6.8rem);
+    margin: 22px 0 28px;
+    font-size: 5.5rem;
   }
 
   .paper-subtitle {
@@ -3435,7 +3436,7 @@ body:not(.fonts-ready) .intro-name {
   }
 
   .final-copy p {
-    font-size: clamp(3.35rem, 13.8vw, 5.3rem);
+    font-size: clamp(5rem, 20vw, 7rem);
   }
 
   .countdown {
@@ -3809,7 +3810,7 @@ body :where(p, h1, h2, h3, h4, span, a, button, input, label, legend, time, stro
   width: 100% !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  font-size: 6rem!important;
+  font-size: 4.5rem!important;
   line-height: 0.82 !important;
 }
 

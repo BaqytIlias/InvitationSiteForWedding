@@ -53,6 +53,11 @@ function observeReveals() {
   document.querySelectorAll("[data-reveal]").forEach((node) => revealObserver.observe(node));
 }
 
+// Music Audio Configuration
+const audio = new Audio("./assets/Jackie_Gleason_-_All_This_And_Heaven_Too_(mp3.pm).mp3");
+audio.loop = true;
+let isPlaying = false;
+
 function openInvitation() {
   if (!openButton || !shell || !coverPanel || !invitationPanel) return;
 
@@ -138,3 +143,45 @@ window.setInterval(updateCountdown, 1000);
 
 if (openButton) openButton.addEventListener("click", openInvitation);
 if (rsvpForm) rsvpForm.addEventListener("submit", handleRsvpSubmit);
+
+// Automatic music start logic (handling browser autoplay policies)
+function tryPlayAudio() {
+  if (isPlaying) return;
+  audio.play().then(() => {
+    isPlaying = true;
+    removePlayTriggers();
+  }).catch(err => {
+    console.log("Autoplay blocked. Awaiting user interaction to play music.", err);
+  });
+}
+
+function removePlayTriggers() {
+  document.removeEventListener("click", tryPlayAudio);
+  document.removeEventListener("touchstart", tryPlayAudio);
+  document.removeEventListener("scroll", tryPlayAudio);
+}
+
+// 1. Try to play immediately on page load
+tryPlayAudio();
+
+// 2. Add fallback interaction triggers (starts music on first tap, scroll or click anywhere)
+document.addEventListener("click", tryPlayAudio);
+document.addEventListener("touchstart", tryPlayAudio);
+document.addEventListener("scroll", tryPlayAudio);
+
+// Pause music immediately on close, exit, blur or minimize
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    audio.pause();
+  } else if (isPlaying) {
+    audio.play().catch(err => console.log("Audio resume blocked:", err));
+  }
+});
+
+window.addEventListener("pagehide", () => {
+  audio.pause();
+});
+
+window.addEventListener("beforeunload", () => {
+  audio.pause();
+});
