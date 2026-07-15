@@ -304,6 +304,33 @@ a {
   animation: coverTextIntro 1.15s 1.02s ease both;
 }
 
+.swipe-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 10;
+  color: rgba(90, 80, 65, 0.7);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: clamp(11px, 2.8vw, 14px);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+  animation: swipeHintFade 1.2s 2s ease both, swipeHintBounce 2s 2.5s ease-in-out infinite;
+}
+
+@keyframes swipeHintFade {
+  from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+@keyframes swipeHintBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(-8px); }
+}
+
 .paper-panel {
   position: relative;
   min-height: 100svh;
