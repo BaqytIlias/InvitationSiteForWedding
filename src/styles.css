@@ -362,6 +362,7 @@ a {
   max-width: 690px;
   height: auto;
   transform: translateX(-50%);
+  clip-path: inset(0 0 7.2% 0); /* Crop the bottom shadow baked into the PNG images */
 }
 
 .open-back-layer {
