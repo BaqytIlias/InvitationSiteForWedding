@@ -437,7 +437,7 @@ a {
   width: 40%;
   aspect-ratio: 1.05;
   padding: 4px 4px 14px;
-  background: rgb(253, 244, 218, 0.95);
+  background: #fbf1e9;
   /* Semi-transparent white polaroid frame */
   object-fit: cover;
   box-shadow: 0 14px 18px rgba(55, 48, 38, 0.24);

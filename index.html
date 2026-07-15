@@ -7,6 +7,8 @@
   <meta name="theme-color" content="#f8f3ed" />
   <title>Olzhas & Aizhan 06.09</title>
   <link rel="icon" type="image/jpeg" href="./public/images/site-seal.jpg" />
+  <link rel="preload" as="image" href="./public/images/intro-background.jpg" />
+  <link rel="preload" as="image" href="./public/images/closed-envelope.jpg" />
   <link rel="stylesheet" href="./src/styles.css" />
   <script src="./script.js" defer></script>
 </head>
@@ -58,11 +60,11 @@
       </div>
 
       <section class="paper-section content-section" aria-labelledby="invitationTitle">
-        <img class="decor-oyu decor-oyu-left" src="assets/oyu.png" alt="" aria-hidden="true" />
-        <img class="decor-oyu decor-oyu-right" src="assets/oyu.png" alt="" aria-hidden="true" />
+        <img class="decor-oyu decor-oyu-left" src="assets/oyu.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+        <img class="decor-oyu decor-oyu-right" src="assets/oyu.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
 
         <div class="paper-card" data-reveal>
-          <img class="paper-image" src="assets/paper-frame-new.png" alt="" aria-hidden="true" />
+          <img class="paper-image" src="assets/paper-frame-new.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
           <div class="paper-copy">
             <!-- Invitation text can be edited here. -->
             <h2 id="invitationTitle">Құрметті қонақтар!</h2>
@@ -81,8 +83,8 @@
       </section>
 
       <section class="calendar-section content-section" aria-labelledby="dateTitle">
-        <img class="open-rose open-rose-left" src="public/images/rose-1.png" alt="" />
-        <img class="open-rose open-rose-right" src="public/images/rose-1.png" alt="" />
+        <img class="open-rose open-rose-left" src="public/images/rose-1.png" alt="" loading="lazy" decoding="async" />
+        <img class="open-rose open-rose-right" src="public/images/rose-1.png" alt="" loading="lazy" decoding="async" />
         <div class="calendar-block" data-reveal>
           <p class="section-kicker">ТОЙ КҮНІ</p>
           <!-- Change event date and time in script.js: SETTINGS.eventDateLabel / SETTINGS.eventTime -->
@@ -140,10 +142,10 @@
 
       <section class="location-section content-section" aria-labelledby="locationTitle">
         <div class="watercolor-layer location-watercolors" aria-hidden="true">
-          <img class="watercolor-decor location-leaf" src="assets/watercolor-leaf-green.png" alt="" />
-          <img class="watercolor-decor location-coral" src="assets/watercolor-coral-cluster.png" alt="" />
-          <img class="watercolor-decor location-orange" src="assets/watercolor-orange-flower.png" alt="" />
-          <img class="watercolor-decor location-small-pink" src="assets/watercolor-small-pink.png" alt="" />
+          <img class="watercolor-decor location-leaf" src="assets/watercolor-leaf-green.png" alt="" loading="lazy" decoding="async" />
+          <img class="watercolor-decor location-coral" src="assets/watercolor-coral-cluster.png" alt="" loading="lazy" decoding="async" />
+          <img class="watercolor-decor location-orange" src="assets/watercolor-orange-flower.png" alt="" loading="lazy" decoding="async" />
+          <img class="watercolor-decor location-small-pink" src="assets/watercolor-small-pink.png" alt="" loading="lazy" decoding="async" />
         </div>
         <div class="petals-layer address-petals" aria-hidden="true">
           <span class="petal" style="--x: 6%; --delay: 0.3s; --d: 8.4s; --size: 11px; --drift: 42px; --r: 24deg"></span>
@@ -188,23 +190,23 @@
           </a>
           <div class="venue-floral-row" aria-hidden="true">
             <img class="venue-floral venue-floral-left" src="./public/images/venue-flower-left.png" alt=""
-              draggable="false" />
+              draggable="false" loading="lazy" decoding="async" />
           </div>
           <figure class="venue-photo-card">
-            <img src="./public/images/samir-2-photo-style.png" alt="" draggable="false" />
+            <img src="./public/images/samir-2-photo-style.png" alt="" draggable="false" loading="lazy" decoding="async" />
           </figure>
         </div>
       </section>
 
       <section class="final-section con~tent-section" aria-labelledby="finalTitle">
         <div class="watercolor-layer final-watercolors" aria-hidden="true">
-          <img class="watercolor-decor final-leaf" src="assets/watercolor-leaf-pale.png" alt="" />
-          <img class="watercolor-decor final-center-flower" src="assets/watercolor-small-pink.png" alt="" />
+          <img class="watercolor-decor final-leaf" src="assets/watercolor-leaf-pale.png" alt="" loading="lazy" decoding="async" />
+          <img class="watercolor-decor final-center-flower" src="assets/watercolor-small-pink.png" alt="" loading="lazy" decoding="async" />
         </div>
         <div class="final-copy" data-reveal>
 
           <div class="final-sprigs" aria-hidden="true">
-            <img class="final-sprig final-sprig-rose" src="./public/images/rose-1.png" alt="" />
+            <img class="final-sprig final-sprig-rose" src="./public/images/rose-1.png" alt="" loading="lazy" decoding="async" />
           </div>
           <p class="final-script">
             <span class="final-script-line script-split" style="margin-bottom: 30px;"><span
@@ -238,9 +240,9 @@
           </div>
         </div>
         <div class="final-footer-graphic">
-          <img class="bunchflowers" src="./assets/footer.png" alt="" aria-hidden="true" />
+          <img class="bunchflowers" src="./assets/footer.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
           <div class="final-rose-overlay">
-            <img class="final-rose" src="./public/images/hosts-monogram-2.png" alt="" aria-hidden="true" />
+            <img class="final-rose" src="./public/images/hosts-monogram-2.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
           </div>
         </div>
       </section>
