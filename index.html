@@ -11,16 +11,25 @@
 </head>
 
 <body>
+  <!-- Desktop warning overlay -->
+  <div class="desktop-only-overlay">
+    <div class="desktop-overlay-content">
+      <img class="desktop-seal" src="./assets/pechat.png" alt="Seal" />
+      <p class="desktop-message">Сайт мобильді телефон арқылы ғана қолжетімді</p>
+    </div>
+  </div>
+
   <main class="site-shell is-cover">
     <section class="cover-panel" aria-label="Digital save the date">
-      <img class="cover-bg" src="./public/images/photo_2026-07-13_19-46-43.jpg" alt="" draggable="false" />
+      <img class="cover-bg" src="./public/images/intro-background.jpg" alt="" draggable="false" />
 
       <button class="closed-envelope-button" type="button" aria-label="Open the invitation">
+        <img class="closed-envelope-image" src="./public/images/closed-envelope.jpg" alt="" draggable="false" />
         <span class="closed-envelope-copy">
           <span class="cover-pretitle">A Love Letter From</span>
           <strong>Olzhas & Aizhan</strong>
         </span>
-        <span class="open-label">Open the invitation</span>
+        <span class="open-label">КОНВЕРТТІ БАСЫҢЫЗ</span>
       </button>
     </section>
 
@@ -47,90 +56,135 @@
         <img class="floral-layer" src="./public/images/floral.webp" alt="" draggable="false" />
       </div>
 
-      <section class="details" aria-label="Wedding details">
+      <section class="paper-section content-section" aria-labelledby="invitationTitle">
+        <img class="decor-oyu decor-oyu-left" src="assets/oyu.png" alt="" aria-hidden="true" />
+        <img class="decor-oyu decor-oyu-right" src="assets/oyu.png" alt="" aria-hidden="true" />
 
-        <img class="details-flower-branch" src="./public/images/details-flower-branch.png" alt="" draggable="false" />
-        <p class="small-caps-var-2">Құрметті қонақтар!</p>
-        <p class="small-caps" style="margin-top: 7px;">сіздерді</p>
-        <p class="small-caps-var-2">Олжас пен Айжанның</p>
-        <p class="small-caps" style="margin-top: 7px;">үйлену тойына арналған</p>
-        <p class="small-caps">салтанатты</p>
-        <p class="small-caps">ақ дастарханымыздың</p>
-        <p class="small-caps">қадірлі қонағы болуға</p>
-        <p class="small-caps">шақырамыз!</p>
-      </section>
-
-
-      <section class="calendar-section" aria-label="Wedding calendar">
-
-        <div class="calendar-block">
-          <div class="calendar-weekday-row" aria-hidden="true">
-            <span>ПН</span>
-            <span>ВТ</span>
-            <span>СР</span>
-            <span>ЧТ</span>
-            <span>ПТ</span>
-            <span>СБ</span>
-            <span>ВС</span>
+        <div class="paper-card" data-reveal>
+          <img class="paper-image" src="assets/paper-frame-new.png" alt="" aria-hidden="true" />
+          <div class="paper-copy">
+            <!-- Invitation text can be edited here. -->
+            <h2 id="invitationTitle">Құрметті қонақтар!</h2>
+            <p class="paper-subtitle">Сіздерді</p>
+            <p class="script-name script-split paper-name">Олжас пен</p>
+            <p class="script-name script-split paper-name">Айжанның</p>
+            <p class="paper-body">
+              үйлену<br>
+              тойына арналған<br>
+              ақ дастарханымыздың<br>
+              қадірлі қонағы<br>
+              болуға шақырамыз!
+            </p>
           </div>
-
-          <div class="calendar-grid">
-            <!-- September 2026 starts on Tuesday — 1 empty cell -->
-            <i aria-hidden="true"></i>
-            <b>1</b>
-            <b>2</b>
-            <b>3</b>
-            <b>4</b>
-            <b>5</b>
-            <b class="event-day">
-              6
-              <!-- Custom Heart balloon -->
-              <span class="heart-balloon-wrap">
-                <img class="heart-balloon-img" src="./public/images/new-calendar-heart.png" alt="" draggable="false" />
-                <span class="heart-balloon-line"></span>
-              </span>
-            </b>
-            <b>7</b>
-            <b>8</b>
-            <b>9</b>
-            <b>10</b>
-            <b>11</b>
-            <b>12</b>
-            <b>13</b>
-            <b>14</b>
-            <b>15</b>
-            <b>16</b>
-            <b>17</b>
-            <b>18</b>
-            <b>19</b>
-            <b>20</b>
-            <b>21</b>
-            <b>22</b>
-            <b>23</b>
-            <b>24</b>
-            <b>25</b>
-            <b>26</b>
-            <b>27</b>
-            <b>28</b>
-            <b>29</b>
-            <b>30</b>
-          </div>
-
-          <p class="calendar-script-label">Қыркүйек</p>
         </div>
       </section>
 
-      <section class="wide-photo-section" aria-label="Wedding image">
-        <img src="./public/images/details-calendar-divider.jpg" alt="" draggable="false" />
+      <section class="calendar-section content-section" aria-labelledby="dateTitle">
+        <img class="open-rose open-rose-left" src="public/images/rose-1.png" alt="" />
+        <img class="open-rose open-rose-right" src="public/images/rose-1.png" alt="" />
+        <div class="calendar-block" data-reveal>
+          <p class="section-kicker">ТОЙ КҮНІ</p>
+          <!-- Change event date and time in script.js: SETTINGS.eventDateLabel / SETTINGS.eventTime -->
+          <div class="calendar-widget" aria-label="Күнтізбе">
+            <div class="calendar-topline">
+              <div class="calendar-month">ҚЫРКҮЙЕК</div>
+              <div class="calendar-year">2026</div>
+            </div>
+            <div class="weekday-row" aria-hidden="true">
+              <span>ДС</span>
+              <span>СС</span>
+              <span>СР</span>
+              <span>БС</span>
+              <span>ЖМ</span>
+              <span>СБ</span>
+              <span>ЖС</span>
+            </div>
+            <div class="calendar-grid">
+              <i aria-hidden="true"></i>
+              <b>1</b>
+              <b>2</b>
+              <b>3</b>
+              <b>4</b>
+              <b>5</b>
+              <b class="event-day">6</b>
+              <b>7</b>
+              <b>8</b>
+              <b>9</b>
+              <b>10</b>
+              <b>11</b>
+              <b>12</b>
+              <b>13</b>
+              <b>14</b>
+              <b>15</b>
+              <b>16</b>
+              <b>17</b>
+              <b>18</b>
+              <b>19</b>
+              <b>20</b>
+              <b>21</b>
+              <b>22</b>
+              <b>23</b>
+              <b>24</b>
+              <b>25</b>
+              <b>26</b>
+              <b>27</b>
+              <b>28</b>
+              <b>29</b>
+              <b>30</b>
+            </div>
+          </div>
+          <p class="time-textp">САҒАТ 19:00</p>
+        </div>
       </section>
 
-      <section class="venue-section" aria-label="Wedding venue">
-        <div class="rectangle-back">
-          <p class="venue-script">Мекен-жайымыз:</p>
-          <p class="venue-address">АЛМАТЫ ҚАЛАСЫ,</p>
-          <p class="venue-address">ЕНГІСУ ДАҢҒЫЛЫ, 29/11</p>
-          <p class="venue-address">"SAMIR 2"</p>
-          <p class="venue-address">МЕЙРАМХАНАСЫ</p>
+      <section class="location-section content-section" aria-labelledby="locationTitle">
+        <div class="watercolor-layer location-watercolors" aria-hidden="true">
+          <img class="watercolor-decor location-leaf" src="assets/watercolor-leaf-green.png" alt="" />
+          <img class="watercolor-decor location-coral" src="assets/watercolor-coral-cluster.png" alt="" />
+          <img class="watercolor-decor location-orange" src="assets/watercolor-orange-flower.png" alt="" />
+          <img class="watercolor-decor location-small-pink" src="assets/watercolor-small-pink.png" alt="" />
+        </div>
+        <div class="petals-layer address-petals" aria-hidden="true">
+          <span class="petal" style="--x: 6%; --delay: 0.3s; --d: 8.4s; --size: 11px; --drift: 42px; --r: 24deg"></span>
+          <span class="petal"
+            style="--x: 22%; --delay: 1.9s; --d: 10.2s; --size: 14px; --drift: -46px; --r: -18deg"></span>
+          <span class="petal"
+            style="--x: 38%; --delay: 0.9s; --d: 8.8s; --size: 10px; --drift: 52px; --r: 56deg"></span>
+          <span class="petal"
+            style="--x: 57%; --delay: 2.6s; --d: 9.7s; --size: 13px; --drift: -34px; --r: -40deg"></span>
+          <span class="petal"
+            style="--x: 76%; --delay: 1.1s; --d: 8.2s; --size: 12px; --drift: 48px; --r: 14deg"></span>
+          <span class="petal"
+            style="--x: 91%; --delay: 3.2s; --d: 10.5s; --size: 10px; --drift: -58px; --r: -26deg"></span>
+          <span class="petal"
+            style="--x: 12%; --delay: -4.2s; --d: 9.6s; --size: 9px; --drift: 58px; --r: -50deg"></span>
+          <span class="petal"
+            style="--x: 29%; --delay: -2.4s; --d: 8.6s; --size: 13px; --drift: -42px; --r: 36deg"></span>
+          <span class="petal"
+            style="--x: 47%; --delay: -6.3s; --d: 11.1s; --size: 11px; --drift: 62px; --r: -12deg"></span>
+          <span class="petal"
+            style="--x: 64%; --delay: -1.5s; --d: 9.3s; --size: 15px; --drift: -54px; --r: 68deg"></span>
+          <span class="petal"
+            style="--x: 84%; --delay: -5.1s; --d: 10.9s; --size: 10px; --drift: 52px; --r: -34deg"></span>
+          <span class="petal"
+            style="--x: 98%; --delay: -3.3s; --d: 8.9s; --size: 12px; --drift: -72px; --r: 22deg"></span>
+          <span class="petal"
+            style="--x: 3%; --delay: -7s; --d: 11.7s; --size: 10px; --drift: 76px; --r: -60deg"></span>
+          <span class="petal"
+            style="--x: 72%; --delay: -8.4s; --d: 12.4s; --size: 9px; --drift: -38px; --r: 48deg"></span>
+        </div>
+        <div class="location-copy" data-reveal>
+          <h2 id="locationTitle" class="script-split" style="margin-top: 10px;"><span class="name-capital">М</span><span
+              class="name-rest">екенжайы:</span></h2>
+          <!-- Change address and map link in script.js: SETTINGS.address / SETTINGS.mapUrl -->
+          <p class="address">АЛМАТЫ ҚАЛАСЫ</p>
+          <p class="address">ЕНГІСУ ДАҢҒЫЛЫ, 29/11</p>
+          <p class="address">"SAMIR 2"</p>
+          <p class="address">МЕЙРАМХАНАСЫ</p>
+          <a class="map-button" id="mapButton" href="https://2gis.kz/almaty/geo/70000001042696899/76.801661,43.177428"
+            target="_blank" rel="noreferrer">
+            КАРТАҒА ӨТУ
+          </a>
           <div class="venue-floral-row" aria-hidden="true">
             <img class="venue-floral venue-floral-left" src="./public/images/venue-flower-left.png" alt=""
               draggable="false" />
@@ -138,20 +192,54 @@
           <figure class="venue-photo-card">
             <img src="./public/images/samir-2-photo-style.png" alt="" draggable="false" />
           </figure>
-          <a class="venue-map-button" href="https://2gis.kz/almaty/geo/70000001042696899/76.801661,43.177428"
-            target="_blank" rel="noopener" aria-label="Open map">КАРТАҒА ӨТУ</a>
         </div>
       </section>
 
-      <section class="hosts-section" aria-label="Wedding hosts">
-        <p class="hosts-script" style="margin-top: 2%;">Той иелері:</p>
-        <p class="hosts-namess" style="margin-right: 20%; margin-top: 5%;">Дәулетхан</p>
-        <p class="hosts-namess" style="margin: -10% auto;">&</p>
-        <p class="hosts-namess" style="margin-left: 35%;"> Сәуле</p>
-        <img class="hosts-monogram" src="./public/images/hosts-monogram.png" alt="" draggable="false" />
-        <p class="hosts-names" style="margin: 0 auto;">СІЗДЕРДІ АСЫҒА КӨҢІЛДЕН</p>
-        <p class="hosts-names">КҮТЕМІЗ!</p>
-        <img class="hosts-flower-branch" src="./public/images/hosts-flower-branch.png" alt="" draggable="false" />
+      <section class="final-section con~tent-section" aria-labelledby="finalTitle">
+        <div class="watercolor-layer final-watercolors" aria-hidden="true">
+          <img class="watercolor-decor final-leaf" src="assets/watercolor-leaf-pale.png" alt="" />
+          <img class="watercolor-decor final-center-flower" src="assets/watercolor-small-pink.png" alt="" />
+        </div>
+        <div class="final-copy" data-reveal>
+
+          <div class="final-sprigs" aria-hidden="true">
+            <img class="final-sprig final-sprig-rose" src="./public/images/rose-1.png" alt="" />
+          </div>
+          <p class="final-script">
+            <span class="final-script-line script-split" style="margin-bottom: 30px;"><span
+                class="name-capital">Т</span><span class="name-rest">ой
+                иелері:</span></span>
+            <span class="final-script-line script-split"><span class="name-capital">Д</span><span
+                class="name-rest">әулетхан</span></span>
+            <span class="final-script-line script-split"><span class="name-capital"></span><span class="name-rest"> &
+              </span></span>
+            <span class="final-script-line script-split"><span class="name-capital">С</span><span
+                class="name-rest">әуле</span></span>
+          </p>
+        </div>
+
+        <div class="countdown" data-reveal aria-label="Тойға дейінгі уақыт">
+          <div class="count-card">
+            <strong id="days">00</strong>
+            <span>күн</span>
+          </div>
+          <div class="count-card">
+            <strong id="hours">00</strong>
+            <span>сағат</span>
+          </div>
+          <div class="count-card">
+            <strong id="minutes">00</strong>
+            <span>минут</span>
+          </div>
+          <div class="count-card">
+            <strong id="seconds">00</strong>
+            <span>секунд</span>
+          </div>
+        </div>
+        <div class="final-footer-graphic">
+          <img class="final-rose" src="./public/images/hosts-monogram-2.png" alt="" aria-hidden="true" />
+          <img class="bunchflowers" src="./public/images/back-last.png" alt="" aria-hidden="true" />
+        </div>
       </section>
     </section>
   </main>
