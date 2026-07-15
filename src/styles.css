@@ -437,7 +437,8 @@ a {
   width: 40%;
   aspect-ratio: 1.05;
   padding: 4px 4px 14px;
-  background: #ffffff; /* Solid white polaroid frame background */
+  background: rgba(255, 255, 255, 0.7);
+  /* Semi-transparent white polaroid frame */
   object-fit: cover;
   box-shadow: 0 14px 18px rgba(55, 48, 38, 0.24);
   transform: rotate(4deg);
@@ -704,8 +705,8 @@ a {
   width: 100%;
   height: auto;
   object-fit: contain;
-  /* Filter to color the gold heart outline to burgundy/maroon (#7b3040) */
-  filter: invert(21%) sepia(37%) saturate(2371%) hue-rotate(314deg) brightness(92%) contrast(89%);
+  /* Filter to color the heart outline to soft pastel pink/beige (#d4a5a5) */
+  filter: invert(72%) sepia(15%) saturate(600%) hue-rotate(315deg) brightness(95%) contrast(90%);
 }
 
 /* Script month label below calendar */
@@ -2414,6 +2415,7 @@ body:not(.fonts-ready) .intro-name {
   transform-origin: center;
   transform: translate(-50%, -50%);
   animation: calendarHeartBreath 4200ms ease-in-out infinite;
+  filter: saturate(0.3) brightness(1.15) sepia(0.25) hue-rotate(330deg);
 }
 
 .time-text {
@@ -3213,6 +3215,11 @@ body:not(.fonts-ready) .intro-name {
   .final-footer-graphic {
     left: 60%;
   }
+
+  .final-section {
+    padding-bottom: 60px;
+  }
+
 }
 
 
@@ -3624,6 +3631,7 @@ body:not(.fonts-ready) .intro-name {
 @media (max-width: 480px) and (max-height: 700px) {
   .final-section {
     padding-top: 28px;
+    padding-bottom: 40px;
   }
 
   .final-copy {
