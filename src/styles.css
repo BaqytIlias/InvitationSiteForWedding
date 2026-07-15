@@ -2457,6 +2457,8 @@ body:not(.fonts-ready) .intro-name {
 }
 
 .location-section {
+  position: relative;
+  overflow: hidden;
   align-content: center;
   margin-top: 10px;
   /* padding-top: 58px;
@@ -2916,8 +2918,11 @@ body:not(.fonts-ready) .intro-name {
 }
 
 .final-section {
+  padding-top: 10%;
+  position: relative;
+  overflow: hidden;
   align-content: start;
-  min-height: 100svh;
+  min-height: 85svh;
   background: #ffffff;
   text-align: center;
 }
@@ -3863,7 +3868,7 @@ body :where(p, h1, h2, h3, h4, span, a, button, input, label, legend, time, stro
   }
 
   .desktop-seal {
-    width: clamp(75px, 8vw, 105px);
+    width: clamp(130px, 12vw, 180px);
     height: auto;
     margin-bottom: 28px;
     user-select: none;
