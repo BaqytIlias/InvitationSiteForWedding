@@ -2055,7 +2055,7 @@ body:not(.fonts-ready) .intro-name {
 
 .open-rose-right {
   right: -156px;
-  bottom: -26px;
+  bottom: -46px;
   z-index: 7;
   transform: translateX(42px) rotate(-45deg);
 }
@@ -2229,7 +2229,6 @@ body:not(.fonts-ready) .intro-name {
 }
 
 .calendar-section {
-  z-index: 1;
   place-items: start center;
   padding-top: 60px;
   margin-top: -50px;
@@ -2819,7 +2818,7 @@ body:not(.fonts-ready) .intro-name {
 }
 
 .open-rose-left {
-  z-index: 1;
+  z-index: 15;
   left: -42px;
   top: -15px;
   transform: translateX(-42px) rotate(47deg);
@@ -2827,7 +2826,7 @@ body:not(.fonts-ready) .intro-name {
 
 .open-rose-right {
   right: -156px;
-  bottom: -26px;
+  bottom: -46px;
   z-index: 7;
   transform: translateX(42px) rotate(-45deg);
 }
@@ -2918,13 +2917,17 @@ body:not(.fonts-ready) .intro-name {
 }
 
 .final-section {
-  padding-top: 10%;
   position: relative;
   overflow: hidden;
-  align-content: start;
-  min-height: 85svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 0;
   background: #ffffff;
   text-align: center;
+  padding: 40px 0 0 0;
+  box-sizing: border-box;
 }
 
 .final-watercolors {
@@ -2939,7 +2942,7 @@ body:not(.fonts-ready) .intro-name {
 
 .final-rose {
   position: absolute;
-  left: 50%;
+  left: 40%;
   top: 30%; /* Vertically centers the monogram on the brush strokes background */
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -3068,13 +3071,11 @@ body:not(.fonts-ready) .intro-name {
 }
 
 .final-footer-graphic {
-  position: absolute;
-  left: 50%;
-  bottom: -18%;
-  z-index: 1;
+  position: relative;
   width: min(136vw, 680px);
   max-width: none;
-  transform: translateX(-50%);
+  margin: 32px auto 0;
+  z-index: 1;
   filter: drop-shadow(0 -8px 28px rgba(100, 104, 62, 0.12));
 }
 
@@ -3286,7 +3287,7 @@ body:not(.fonts-ready) .intro-name {
 
   .open-rose-right {
     right: -130px;
-    bottom: -45px;
+    bottom: -65px;
     width: min(58vw, 228px);
   }
 
@@ -3510,7 +3511,7 @@ body:not(.fonts-ready) .intro-name {
 
   .open-rose-right {
     right: -124px;
-    bottom: -18px;
+    bottom: -58px;
     width: min(54vw, 210px);
   }
 
