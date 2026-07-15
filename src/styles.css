@@ -2941,17 +2941,25 @@ body:not(.fonts-ready) .intro-name {
   width: min(96vw, 520px);
 }
 
-.final-rose {
+.final-rose-overlay {
   position: absolute;
+  top: 40%;
   left: 50%;
-  top: 50%; /* Mathematically centers the monogram perfectly inside the container */
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 2;
-  width: min(32%, 140px); /* Larger size so it is highly visible */
+  pointer-events: none;
+}
+
+.final-rose {
+  width: min(40vw, 140px);
   height: auto;
   user-select: none;
   pointer-events: none;
-  filter: none; /* Keep it white to stand out against the brown brush strokes */
+  filter: none;
 }
 
 .final-leaf {
@@ -3073,7 +3081,7 @@ body:not(.fonts-ready) .intro-name {
 
 .final-footer-graphic {
   position: relative;
-  left: 50%;
+  left: 60%;
   transform: translateX(-50%);
   width: min(136vw, 680px);
   max-width: none;
