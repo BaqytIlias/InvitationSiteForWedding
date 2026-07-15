@@ -2430,7 +2430,7 @@ body:not(.fonts-ready) .intro-name {
   font-weight: 400;
   color: #ffffff;
   text-align: center;
-  margin: 10px 0 30px 0;
+  margin: 20px 0 30px 0;
 }
 
 .bird {
@@ -2943,8 +2943,8 @@ body:not(.fonts-ready) .intro-name {
 
 .final-rose {
   position: absolute;
-  left: 40%;
-  top: 40%; /* Vertically centers the monogram on the brush strokes background */
+  left: 50%;
+  top: 50%; /* Mathematically centers the monogram perfectly inside the container */
   transform: translate(-50%, -50%);
   z-index: 2;
   width: min(32%, 140px); /* Larger size so it is highly visible */
@@ -2966,7 +2966,7 @@ body:not(.fonts-ready) .intro-name {
   --w: min(14vw, 56px);
   --o: 0.78;
   --r: -26deg;
-  left: 5%;
+  left: 0%;
   top: 3%;
 }
 
@@ -3007,7 +3007,7 @@ body:not(.fonts-ready) .intro-name {
 }
 
 .final-sprig-rose {
-  right: 2%;
+  right: 0;
   top: -30px;
   width: 42px;
   transform: translateX(-50%) rotate(297deg);
@@ -3073,9 +3073,11 @@ body:not(.fonts-ready) .intro-name {
 
 .final-footer-graphic {
   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   width: min(136vw, 680px);
   max-width: none;
-  margin: 32px auto 0;
+  margin: 32px 0 0 0;
   z-index: 1;
   filter: drop-shadow(0 -8px 28px rgba(100, 104, 62, 0.12));
 }
@@ -3407,7 +3409,7 @@ body:not(.fonts-ready) .intro-name {
   }
 
   .final-center-flower {
-    left: 4%;
+    left: 0%;
     top: calc(30% - 90px);
   }
 
